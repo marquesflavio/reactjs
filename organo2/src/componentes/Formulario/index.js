@@ -3,27 +3,23 @@ import './Formulario.css'
 
 
 const Formulario = () => {
-    return(
-        <form>
-            <h2>Preencha os dados para criar o card dos seus livros</h2>
-            <CampoTexto
-                onbrigatorio={true}
-                label="Nome do Livro"
-                input='text'
-                 
-            />
+    return (
+        <section className='formulario'>
+            <form>
+                <h2>Preencha os dados para criar o card dos seus livros</h2>
+                <CampoTexto
+                    onbrigatorio={true}
+                    label="Nome do Livro"
+                    placeholder="Digite o nome do livro..."
 
-            <CampoTexto
-                label="Autor" 
-               
-            />
+                />
+                <CampoTexto
+                    label="Autor"
+                    placeholder="Digite o nome do autor..."
 
-            <CampoTexto
-                label="Nome" 
-               
-            />
-
-        </form>
+                />
+            </form>
+        </section>
 
     )
 }
