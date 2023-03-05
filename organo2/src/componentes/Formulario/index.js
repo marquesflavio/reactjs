@@ -11,9 +11,9 @@ const Formulario = () => {
     const generos = [
         'Aventura',
         'Fantasia',
-        'Época',
+        'Ficção Científica',
         'Investigação',
-        'Romance'
+        'Suspense'
     ]
 
     const aoSalvar = (submissao) => {
