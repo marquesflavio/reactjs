@@ -1,0 +1,19 @@
+.rodape{
+    background-color: #69d36f;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+.rodape ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+       
+
+}
+
+.rodape a{
+    text-decoration: none;
+}
