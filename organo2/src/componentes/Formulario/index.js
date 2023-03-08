@@ -1,62 +1,22 @@
-import { useState } from 'react'
-import './Formulario.css'
-import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
-import ListaSuspensa from '../ListaSuspensa'
-
-
+import './Formulario.css'
 
 const Formulario = () => {
-
-    const generos = [
-        'Aventura',
-        'Fantasia',
-        'Ficção Científica',
-        'Investigação',
-        'Suspense'
-    ]
-
-    const aoSalvar = (submissao) => {
-        submissao.preventDefault()
-
-    }
-
-    const [livro, setLivro] = useState('')
-    const [autor, setAutor] = useState('')
-    
-    return (
+    return(
         <section className='formulario'>
-            <form onSubmit={aoSalvar} >
-                <h2>Preencha os dados para criar o card dos seus livros favoritos</h2>
+            <CampoTexto
+                label='Nome do Livro'
+                />
+            
                 <CampoTexto
-                    necessario={true}
-                    label="Nome do Livro"
-                    placeholder="Digite o nome do livro..."
-                    valor={livro}
-                    alterado={valor => setLivro(valor)}
-
+                label='Autor'
+            
                 />
                 <CampoTexto
-                    necessario={true}
-                    label="Autor"
-                    placeholder="Digite o nome do autor..."
-                    valor={autor}
-                    alterado={valor => setAutor(valor)}
-
+                label='Gênero'
+            
                 />
-                <ListaSuspensa 
-                    itens={generos}
-                    label="Gêneros"
-                
-                />
-                <Botao 
-                children
-
-                />
-            </form>
         </section>
-
     )
 }
-
 export default Formulario
