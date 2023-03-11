@@ -3,6 +3,10 @@ import HelloWord from './components/HelloWord';
 import Frase from './components/Frase'
 import Pessoa from './components/Pessoa';
 import Pessoa2 from './components/Pessoa2';
+import Fragmentos from './components/Fragmentos';
+import List from './components/List';
+import Evento from './components/Evento';
+import EventoForm from './components/EventoForm';
 
 
 function App() {
@@ -28,17 +32,23 @@ function App() {
 
       <Pessoa 
         nome='Flávio'
-        idade='30'
+        idade={30} // passando number, tem que ser nessa sintaxe
         profissao='programador'
         foto='https://via.placeholder.com/150'
         />
 
       <Pessoa2 
         nome='Flávio'
-        idade='30'
+        idade={30}
         profissao='Programador'
         foto='https://via.placeholder.com/150' 
         />
+      <Fragmentos />
+      <List />
+
+      <Evento numero='1' />
+      <Evento numero='2' />
+      <EventoForm />
     </div>
 
   );
